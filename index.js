@@ -7,6 +7,6 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .get('/', (req, res) => 
     {
-      res.sendFile(path.join(__dirname+'/views/pages/index.html'))
+      res.sendFile(path.join(__dirname+'/dist/index.html'))
     })  
     .listen(PORT, () => console.log(`Listening on ${ PORT }`))
