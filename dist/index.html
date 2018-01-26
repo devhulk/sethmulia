@@ -3,8 +3,53 @@
   <title>
     Seth Mulia
   </title>
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    height: 65%;
+    margin: auto;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#app {
+    padding: 2px 16px;
+    height: 720px;
+}
+.footer {
+  padding: 2px 16px;
+}
+</style>
 <head>
 </head>
 
-<body></body>
+<body>
+  <div id="app">
+  </div>
+
+</body>
+<script>
+    let app = document.getElementById('app')
+    let card = document.createElement('div')
+    card.className = 'card'
+    app.append(card)
+
+    let avatar = document.createElement('img')
+    avatar.src = '/sethMulia.jpeg'
+    avatar.style.width = '100%'
+    card.append(avatar)
+    let footer = document.createElement('div')
+    footer.className = 'footer'
+    let cardTitle = document.createElement('h4')
+    cardTitle.innerHTML = 'Seth Mulia'
+    footer.append(cardTitle)
+    let cardBody = document.createElement('p')
+    cardBody.innerHTML = 'I am Seth Mulia, you Land Fill my G?'
+    footer.append(cardBody)
+    
+    card.append(footer)
+  
+</script>
 </html>
